@@ -36,12 +36,6 @@ VALUES
     (null, '配件详情', @appid, NULL, NULL, NULL, NULL, 15, 1, @language, 1, NULL, NOW(), NULL, NOW(), 0, 1, '', 'System');
 
 
--- permissions 库需要增加的权限
-INSERT INTO `auth_client` (`client_id`, `client_secret`, `client_name`, `client_logo`, `client_desc`, `client_type`, `client_url`, `allow_url`, `contract_scope`, `code_mode`, `implicit_mode`, `password_mode`, `client_mode`, `access_token_timeout`, `refresh_token_timeout`, `client_token_timeout`, `past_client_token_timeout`, `logout_url`, `created_at`, `updated_at`)
-VALUES
-	('1015', '1009123', 'CMS-韩国站', NULL, '1', 'base', NULL, '*', NULL, 1, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
-
-
 -- 批量同步模板数据，使用存储过程
 DELIMITER $$
 
